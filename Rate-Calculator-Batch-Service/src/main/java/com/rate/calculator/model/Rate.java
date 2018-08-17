@@ -1,7 +1,5 @@
 package com.rate.calculator.model;
 
-import java.util.Date;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -20,6 +18,7 @@ public class Rate {
 
 	// effDate product indexName cdscOption band capRate mnCapRtCDSC mnCapRtPCDSC
 	// contractYr mvaInd
+	
 	@Id
 	private String id;	
 	private String effDate;
