@@ -16,7 +16,9 @@
 		<p>
 			<a href="/view">View Rates</a>
 		</p>
-
+		<p>
+			<a href="/fileUpload">Upload Rates</a>
+		</p>
 	</div>
 </body>
 </html>

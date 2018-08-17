@@ -15,6 +15,6 @@
 		<input type="file" name="file" /><br /> <input type="submit"
 			value="Submit" />
 	</form>
-
+	<a href="/rates">Back to Rates</a>
 </body>
 </html>

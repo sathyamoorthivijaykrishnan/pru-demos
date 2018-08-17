@@ -12,10 +12,9 @@ import com.rate.calculator.model.Rate;
 @Service
 public class RateDataService {
 	
-	/*public FileDownloadService(String serviceName) {
-		super();
+	public RateDataService(String serviceName) {
 		this.serviceName = serviceName;
-	}*/
+	}
 
 	protected String serviceName;
 	
@@ -24,7 +23,7 @@ public class RateDataService {
 	
 	public List<Rate> getRates(){
 		Rate rates[];
-		rates= restTemplate.getForObject("http://localhost:9094/getRates", Rate[].class);
+		rates= restTemplate.getForObject(serviceName+"/getRates", Rate[].class);
 		for(Rate rat : rates) {
 		System.out.println("*******rates*******"+ rat);
 		}

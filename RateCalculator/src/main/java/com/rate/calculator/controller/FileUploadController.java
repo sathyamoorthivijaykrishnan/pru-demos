@@ -1,4 +1,4 @@
-package com.rate.calculator.controller;
+/*package com.rate.calculator.controller;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -46,3 +46,4 @@ public class FileUploadController {
 		return "uploadFile";
 	}
 }
+*/
