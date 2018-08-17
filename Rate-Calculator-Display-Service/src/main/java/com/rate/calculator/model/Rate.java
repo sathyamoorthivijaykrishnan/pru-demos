@@ -1,32 +1,36 @@
 package com.rate.calculator.model;
 
-import java.math.BigInteger;
-import java.util.Date;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-
-@Document(collection ="Rate")
+@Document(collection = "Rate")
 public class Rate {
 
 	// effDate product indexName cdscOption band capRate mnCapRtCDSC mnCapRtPCDSC
 	// contractYr mvaInd
 	@Id
-	private String id;	
+	private String id;
+
 	private String effDate;
+
 	private String product;
+
 	private String indexName;
+
 	private int cdscOption;
+
 	private String band;
+
 	private double capRate;
+
 	private int mnCapRtCDSC;
+
 	private int mnCapRtPCDSC;
+
 	private int contractYr;
+
 	private String mvaInd;
-	
-	private String updatedOn;
 
 	public String getId() {
 		return id;
@@ -45,7 +49,7 @@ public class Rate {
 		return "Rate [id=" + id + ", effDate=" + effDate + ", product=" + product + ", indexName=" + indexName
 				+ ", cdscOption=" + cdscOption + ", band=" + band + ", capRate=" + capRate + ", mnCapRtCDSC="
 				+ mnCapRtCDSC + ", mnCapRtPCDSC=" + mnCapRtPCDSC + ", contractYr=" + contractYr + ", mvaInd=" + mvaInd
-				+ ", updatedOn=" + updatedOn + "]";
+				+ "]";
 	}
 
 	public String getEffDate() {
@@ -54,14 +58,6 @@ public class Rate {
 
 	public void setEffDate(String effDate) {
 		this.effDate = effDate;
-	}
-
-	public String getUpdatedOn() {
-		return updatedOn;
-	}
-
-	public void setUpdatedOn(String updatedOn) {
-		this.updatedOn = updatedOn;
 	}
 
 	public void setProduct(String product) {

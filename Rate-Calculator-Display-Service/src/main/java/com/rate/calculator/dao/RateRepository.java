@@ -11,7 +11,6 @@ import com.rate.calculator.model.Rate;
 public interface RateRepository extends MongoRepository<Rate, String> {
 	
  List<Rate> findByProduct(String Product);
- List<Rate> findByUpdatedOn(String date);
  List<Rate> findByEffDate(String effDate);
  
 }
